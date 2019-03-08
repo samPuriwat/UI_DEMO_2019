@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="381.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <Pane prefHeight="412.0" prefWidth="357.0" style="-fx-background-color: #00bbd3;">
+         <children>
+            <FontAwesomeIconView glyphName="CREDITCARD" layoutX="145.0" layoutY="122.0" size="50" text="" wrappingWidth="51.0" />
+         </children>
+      </Pane>
+      <JFXTextField fx:id="txtUser" labelFloat="true" layoutX="413.0" layoutY="103.0" promptText="username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPass" labelFloat="true" layoutX="412.0" layoutY="153.0" prefHeight="25.0" prefWidth="159.0" promptText="password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="500.0" layoutY="206.0" onAction="#Login" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #00bbd3;" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
